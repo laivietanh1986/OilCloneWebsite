@@ -1,0 +1,892 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+
+/* Transition */
+nav,
+nav *,
+.navbar-nav .nav-link:after,
+.btn,
+.owl-nav > div,
+.owl-dot *,
+.home .recipe a,
+.home .recipe a h6,
+.home .recipe a img,
+.home .news a,
+.home .news a img,
+.products article a img,
+.healthy-chef article .more span,
+.recipes article a,
+.recipes article a h6,
+.recipes article a img,
+.news article a,
+.news article a img{
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+.home .recipe a:hover img,
+.home .news a:hover img,
+.products article a:hover img,
+.recipes article a:hover img,
+.news article a:hover img{
+	transform: scale(1.1);
+}
+
+/* Utility */
+.space{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.headline{
+	position: relative;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	color: #555;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+}
+.headline:after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	width: 80px;
+	height: 1px;
+	content: '';
+	margin: auto;
+	background-color: #006838;
+}
+.btn{
+    padding: 12px 35px;
+    background-color: #006838;
+    border: 2px solid #006838;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+	background-color: #fff;
+    color: #006838;
+}
+.btn.inverse{
+	background-color: #fff;
+	color: #006838;
+}
+.btn.inverse:hover{
+	background-color: #006838;
+	color: #fff;
+}
+.alert{
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+.alert:last-child{
+    margin-bottom: 2rem;
+}
+.alert strong{
+	display: none;
+}
+.alert-success{
+	background-color: #006838;
+}
+.alert-danger{
+	background-color: #bc3c30;
+}
+.alert-warning{
+	background-color: #ccc;
+	border-color: #ccc;
+	width: 100%;
+}
+.alert-warning button{
+	display: none;
+}
+.page-link{
+    color: #006838 !important;
+}
+.page-item.active .page-link{
+    background-color: #006838;
+    border-color: #006838;
+    color: #fff !important;
+}
+.tos-close span:after,
+.tos-close span:before{
+	width: 8px !important;
+	height: 8px !important;
+}
+
+/* Main */
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.02em;
+    color: #888;
+    padding-top: 58px;
+    background-color: #f6f6f6;
+    /*
+    margin-bottom: 66px;
+    */
+}
+h1, h2{
+    letter-spacing: 0.05em;
+}
+h3, h4, h5{
+    letter-spacing: 0.03em;
+}
+h1{
+    font-size: 30px;
+}
+h3{
+	font-size: 26px;
+}
+h5{
+	font-size: 20px;
+}
+h6{
+	font-size: 16px;
+}
+
+/* Nav */
+nav{
+    background-color: #f6f6f6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    box-shadow: 1px 1px 5px 0px #ddd;
+}
+.navbar{
+	padding: .25rem 0;
+}
+.navbar-brand{
+	padding: 0;
+}
+.navbar-brand img{
+	height: 50px;
+} 
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus{
+	cursor: pointer;
+	right: 0;
+	margin-top: 5px;
+	padding: .20rem .3rem;
+	border: none;
+	outline: none;
+}
+.navbar-collapse{
+	margin: 10px -15px 5px -15px;
+}
+.navbar-nav .nav-link{
+    padding: 10px 15px;
+    color: #000 !important;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+    position: relative;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .active > .nav-link{
+	color: #fff !important;
+	background-color: #006838;
+}
+
+/* Header */
+header{
+	position: relative;
+    top: 0;
+	z-index: 1;
+    overflow: hidden;
+}
+header.inside,
+header.inside .wrapper{
+	height: 100px;
+}
+header.inside img{
+	position: absolute;
+	left: -9999px;
+	right: -9999px;
+	top: -9999px;
+	bottom: -9999px;
+	margin: auto;
+}
+header h1{
+	z-index: 11;
+	position: absolute;
+	top: 50%;
+	color: #525252;
+	width: 100%;
+	margin-top: -15px;
+	margin-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;	
+}
+header h1 span{
+	letter-spacing: 0.05em;	
+	font-weight: 700;
+}
+header span{
+	color: #006838;
+}
+header .owl-carousel .item{
+	position: relative;
+	background-color: #f6f6f6;
+}
+header .owl-carousel img{
+    width: 120% !important;
+}
+/*
+header .owl-carousel .caption{
+	padding: 15px 0;
+}
+header .owl-carousel h4{
+	color: #006838;
+	font-size: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+}
+header .owl-carousel p{
+	font-size: 15px;
+    color: #555;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+}
+*/
+header .owl-nav{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	font-size: 40px;
+}
+header .owl-nav > div{	
+	margin: 0 10px;
+	opacity: 1;
+}
+header .owl-nav > div span{
+	color: #fff;
+}
+header .owl-prev{
+	float: left;
+}
+header .owl-next{
+	float: right;
+}
+
+/* Article */
+/*
+article{
+	position: relative;
+	z-index: 111;
+	background: #fff;
+	margin-bottom: 79px;
+}
+*/
+
+/* Article & Section */
+article,
+section{
+	background-color: #f6f6f6;
+	position: relative;
+	z-index: 111;
+}
+
+footer{
+	/*
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    */
+    width: 100%;
+    text-align: center;
+	background: #006838;
+    color: #fff;
+    font-size: 12px; 
+    padding: 15px 0; 
+}
+footer a{
+	color: #fff;
+}
+footer a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Home */
+.home .product h1{
+    color: #006838;
+}
+.home .product h2{
+    color: #006838;
+	font-size: 30px;
+}
+.home .product h5{
+	color: #7c9e27;
+}
+.home .product p{
+    font-size: 17px;
+    line-height: 30px;
+}
+.home .oil-bottle{
+    background: url(../images/bg-oil-bottle.jpg) no-repeat center top;
+}
+.home .cooking-oil{
+    background-image: url(../images/bg-cooking-oil.jpg);
+    background-repeat: no-repeat;
+    background-position: left  -200px;
+}
+.home .cooking-oil .box{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+.home .cooking-oil p{
+	color: #000;
+}
+.home .cooking-oil h2,
+.home .cooking-oil p{
+	text-shadow: 0 0 10px #fff;
+}
+.home .news{
+	background-color: #f6f6f6;
+}
+.home .news a.thumb,
+.news article a.thumb{
+	border-radius: 4px;
+	overflow: hidden;
+	display: block;
+}
+.home .news .info,
+.news article .info{
+	background-color: #fff;
+    border-radius: 4px;
+    padding: 25px;
+    width: 92%;
+    margin: auto;
+    position: relative;
+    margin-top: -20px;
+    overflow: hidden;
+}
+.news article .info{
+	box-shadow: 1px 1px 5px #eee;
+}
+.home .news .info h6,
+.news article .info h6{
+    margin-bottom: 10px;
+    color: #006838;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+}	
+.home .news .info span,
+.news article .info span{
+	font-size: 12px;
+}
+.home .news .info p,
+.news article .info p{
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+}	
+.home .news .info a,
+.news article .info a{
+	float: right;
+    color: #006838;
+	font-size: 13px;
+	text-decoration: underline;
+}
+.home .news .info a:hover,
+.news article .info a:hover{
+	color: #555;
+	margin-right: 10px;
+}
+.news article a{
+	color: #006838;
+}
+
+.news article a:hover{
+	color: #555;
+}
+
+/* Products */
+.products header.inside img{
+	right: 0;
+	left: -900px;
+}
+.products article a{
+	overflow: hidden;
+	display: block;
+}
+
+/* Healthy Chef */
+.healthy-chef article .detail{
+	margin: 0 0 60px 0;
+	text-align: center;
+}
+.healthy-chef article .detail ul{
+	list-style: none;
+	padding-left: 0;
+	color: #555;
+}
+.healthy-chef article .bottle img{
+	width: 240px;
+}
+.healthy-chef article h2{
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.healthy-chef article h3{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.healthy-chef article strong{
+	color: #006838;
+}
+.healthy-chef article .soybean h2{
+	color: #007547;
+}
+.healthy-chef article .canola h2{
+	color: #584222;
+}
+.healthy-chef article .corn h2{
+	color: #20503a;
+}
+.healthy-chef article .sunflower h2{
+	color: #7d1b20;
+}
+.healthy-chef article .soybean h3{
+	color: #88ad3f;
+}
+.healthy-chef article .canola h3{
+	color: #ac7649;
+}
+.healthy-chef article .corn h3{
+	color: #348470;
+}
+.healthy-chef article .sunflower h3{
+	color: #d57c85;
+}
+.healthy-chef article .more{
+	display: inline-block;
+	margin-top: 10px;
+	color: #333;
+	text-decoration: none;
+}
+.healthy-chef article .more span{
+	margin-right: 5px;
+}
+.healthy-chef article .more:hover span{
+	margin-right: -3px;
+	color: #006838;
+}
+
+/* Queen */
+.queen article .detail{
+	margin: 0 0 60px 0;
+	text-align: center;
+}
+.queen article .detail ul{
+	list-style: none;
+	padding-left: 0;
+	color: #555;
+}
+.queen article img{
+}
+.queen article h2{
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: #007547;
+}
+.queen article h3{
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #88ad3f;
+}
+.queen article strong{
+	color: #006838;
+}
+
+/* News */
+.news .editor img{
+	max-width: 100%;
+}
+.news .gallery{
+	margin-top: 40px;
+}
+
+/* About */
+.about article figure{
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.about article p strong{
+	color: #006838;
+}
+.about article p a{
+	color: #006838;
+}
+
+/* Contact */
+.contact .infowindow{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.contact .infowindow h5{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #006838;
+}
+.contact .infowindow li{
+	margin-top: 7px;
+}
+.contact .infowindow li a{
+	color: #006838;
+}
+.contact .infowindow li .fa{
+	display: inline-block;
+	text-align: center;
+	margin-right: 5px;
+	margin-left: 3px;
+	width: 20px;
+}
+.contact .mb-4 a{
+	font-weight: bold;
+	text-decoration: none;
+	color: #006838;
+}
+.contact .mb-4 a:hover{
+	text-decoration: underline;
+}
+.contact address strong{
+	color: #006838;
+}
+.contact form .has-danger .g-recaptcha > div{
+	border: 1px solid #d9534f;
+}
+
+/* Error */
+.error404{
+	text-align: center;
+	text-transform: uppercase;
+}
+.error404 .col{
+	padding: 110px;
+}
+.error404 h2{
+	font-size: 100px;
+	font-weight: 700;
+}
+.error404 h3{
+	font-size: 20px;
+}
+.error404 .btn{
+	display: inline-block;
+	color: #fff;
+}
+
+/* Min width 480px */
+@media(min-width: 480px){
+	header .owl-carousel img{
+	    width: 100% !important;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width: 576px){
+	.products header.inside img{
+		right: 0;
+		left: -700px;
+	}
+	.healthy-chef article .detail{
+		margin: 0;
+		text-align: left;
+	}
+	.healthy-chef article .detail ul{
+		list-style: disc;
+		padding-left: 50px;
+	}
+	.healthy-chef article .bottle img{
+		margin: 0 0 50px -10px;
+	}
+	.healthy-chef article h2{
+		margin-top: 45px;
+		margin-left: 10px;
+	}
+	.healthy-chef article h3{
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media(min-width: 768px){
+	body{
+		/*
+    	margin-bottom: 71px;
+    	*/
+	}	
+	header .owl-carousel .container{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+	  	transform: translateX(-50%);
+	}
+	/*
+	header .owl-carousel .caption{
+		position: absolute;
+		top: 20%;
+	}
+	header .owl-carousel .caption.one,
+	header .owl-carousel .caption.two,
+	header .owl-carousel .caption.three{
+		left: 2%;
+		width: 340px;
+	}
+	header .owl-carousel h4{
+    	display: block;
+		color: #000;
+		font-size: 40px;
+	    line-height: 46px;
+	    margin-bottom: 10px;
+	}
+	header .owl-carousel p{
+    	display: block;
+		font-size: 17px;
+	    line-height: 28px;
+	}
+	*/
+	footer{
+	    padding: 25px 0;
+	    font-size: 14px;  
+		letter-spacing: 1px;
+		position: relative;
+		z-index: 10;
+	}
+	.home .product h2{
+		font-size: 40px;
+	}
+	.home .oil-bottle{
+	    background-size: contain;
+	}
+	.home .cooking-oil{
+	    background-position: left  -200px;
+	}
+	.error404 h2{
+		font-size: 260px;
+	}
+	.error404 h3{
+		font-size: 45px;
+	}
+	.queen article .detail{
+		margin: 0;
+		text-align: left;
+	}
+	.queen article .detail ul{
+		list-style: disc;
+		padding-left: 50px;
+	}
+	.queen article img{
+	}
+	.queen article h2{
+		margin-top: 45px;
+		margin-left: 10px;
+	}
+	.queen article h3{
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media(min-width: 992px){
+	body{
+	    padding-top: 69px;
+	}	
+	.space{
+	    padding-top: 100px;
+	    padding-bottom: 100px;
+	}
+	h1{
+	    font-size: 45px;
+	}
+	nav{
+		box-shadow: none;
+	}
+	nav.scrolled{
+	    background-color: #f6f6f6;
+	    box-shadow: 1px 1px 10px 1px #ddd;
+	}
+	nav.scrolled .navbar{ 
+		padding: .25rem 0;
+	}
+	nav.scrolled .navbar-brand img{
+		height: 60px;
+	}
+	.navbar{ 
+		padding: .5rem 0;
+	}
+	.navbar-brand img{
+		height: 80px;
+	}
+	.navbar-collapse{
+		margin: 0;
+	}
+	.navbar-nav > li{
+	    padding: 20px 30px;
+	}
+	.navbar-nav .nav-link{
+    	padding: 0 5px;
+	}
+	.navbar-nav .nav-link:after{
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    height: 2px;
+	    background-color: #006838;
+	    width: 0;
+	    bottom: -10px;
+	    content: '';
+	}
+	.navbar-nav .nav-link:hover:after,
+	.navbar-nav .active > .nav-link:after{
+		width: 100%;
+	}
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .active > .nav-link{
+		color: #006838 !important;
+		background-color: transparent;
+	}
+	header h1{
+		margin-top: -5px;
+		margin-left: -200px;		
+	}
+	/*
+	header .owl-carousel .caption.one{
+		width: 400px;
+		left: 10%;
+	}
+	header .owl-carousel .caption.two,
+	header .owl-carousel .caption.three{
+		width: 400px;
+		left: 5%;
+		top: 30%;
+		text-align: center;
+	}
+	header .owl-carousel h4{
+		font-size: 60px;
+	    line-height: 70px;
+	    margin-bottom: 20px;
+	}
+	header .owl-carousel .caption.one h4{
+		font-size: 46px;
+	    line-height: 60px;
+	}
+	header .owl-carousel p{
+	    line-height: 30px;
+	}
+	*/
+	header .owl-nav{
+		margin-top: -9px;
+	}
+	header.inside,
+	header.inside .wrapper{
+		height: 270px;
+	}
+	article{
+		min-height: 600px;
+	}	
+	.home .oil-bottle{
+	    background-size: cover;
+	}
+	.products header.inside img{
+		right: -9999px;
+		left: -9999px;
+	}
+	.healthy-chef article .bottle img{
+		width: 300px;
+		margin: 0 0 100px 0;
+	}
+	.healthy-chef article h2{
+		margin-top: 80px;
+	}
+	.queen article img{
+	}
+	.queen article h2{
+		margin-top: 100px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media(min-width: 1200px){
+	header .wrapper{
+		position: fixed;
+		width: 100%;
+	}
+	.home header,
+	header .owl-carousel .item{
+		height: 700px;
+	}
+	header .owl-carousel img{
+		position: absolute;
+	    min-height:100%;
+	}
+	.home .oil-bottle{
+	    background-size: cover;
+	} 
+	.home .cooking-oil{
+		padding-top: 150px;
+		padding-bottom: 150px;
+		/*
+		background-attachment: fixed;
+		background-size: 1920px;
+		*/
+		background-position: center -120px;
+	}
+	.home .cooking-oil .box{
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+
+/* Min width 1600px */
+@media(min-width: 1600px){
+	.home header,
+	header .owl-carousel .item{
+		height: 860px;
+	}
+}
+
+/* Min width 2000px */
+@media(min-width: 2000px){
+	header.inside img{
+		width: 100%;
+	}	
+	.home header,
+	header .owl-carousel .item{
+		height: 1200px;
+	}	
+	.home .cooking-oil{
+		background-position: center;
+		background-size: cover;
+	}
+}
