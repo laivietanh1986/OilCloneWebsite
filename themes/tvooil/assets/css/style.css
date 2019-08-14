@@ -449,7 +449,7 @@ footer a:hover{
 	color: #555;
 }
 .healthy-chef article .bottle img{
-	width: 240px;
+	/* width: 240px; */
 }
 .healthy-chef article h2{
 	text-transform: uppercase;
@@ -824,7 +824,7 @@ footer a:hover{
 		left: -9999px;
 	}
 	.healthy-chef article .bottle img{
-		width: 300px;
+		/* width: 300px; */
 		margin: 0 0 100px 0;
 	}
 	.healthy-chef article h2{
